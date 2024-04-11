@@ -4,7 +4,7 @@
   "metadata": {
     "colab": {
       "provenance": [],
-      "authorship_tag": "ABX9TyMOExBJJa6VlYYasKf6/vGo",
+      "authorship_tag": "ABX9TyP9kgpejRBAJIf9goRhTMs/",
       "include_colab_link": true
     },
     "kernelspec": {
@@ -23,13 +23,23 @@
         "colab_type": "text"
       },
       "source": [
-        "<a href=\"https://colab.research.google.com/github/ciellleen/20240321-/blob/main/20240411\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+        "<a href=\"https://colab.research.google.com/github/ciellleen/20240321-/blob/main/Untitled2.ipynb\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
       ]
     },
     {
       "cell_type": "markdown",
       "source": [
-        "1. $\\sqrt{3x-1}+(1+x)^2$"
+        "1. $\\sqrt{3x-1}+(1+x)^2$\n",
+        "\n",
+        "x를 입력받아 루트 (3x -1) + (1+x)^2에 대한 값을 출력하는 코드\n",
+        "\n",
+        "import math // math 함수 불러오기\n",
+        "\n",
+        "x = float(input(\"x를 입력하시오: \")) // x 값 입력받기\n",
+        "\n",
+        "R = math.sqrt(3*x - 1) + pow(1 + x, 2) // x 값으로 계산하기\n",
+        "\n",
+        "print(f\"루트(3x-1) + (1+x)^2의 값은 {R:.2f}이다.\") // 결과 값 소수점 2번 째 까지 출력하기"
       ],
       "metadata": {
         "id": "FqxoBp9_kgba"
@@ -62,7 +72,7 @@
         "id": "_W-poMKhhrsy",
         "outputId": "23eb277b-3e76-4f8b-91b0-321ec24f4fed"
       },
-      "execution_count": 3,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
@@ -77,7 +87,38 @@
     {
       "cell_type": "markdown",
       "source": [
-        "2."
+        "2.\n",
+        "import time # time 모듈을 import\n",
+        "\n",
+        "print(\"Sleeping\") # \"Sleeping\" 메시지를 출력\n",
+        "\n",
+        "time.sleep(30) # 프로그램을 30초 동안 일시적으로 중지\n",
+        "\n",
+        "print(\"Done Sleeping\") # \"Done Sleeping\" 메시지를 출력"
+      ],
+      "metadata": {
+        "id": "Vmd_gaii4Tmd"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import time\n",
+        "print(\"Sleeping\")\n",
+        "time.sleep(30)\n",
+        "print(\"Done Sleeping\")"
+      ],
+      "metadata": {
+        "id": "GdaYDNVq4jA9"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "3.\n",
+        "!ls /content # /content 디렉토리의 내용을 보여주는 코드"
       ],
       "metadata": {
         "id": "dWRc5EWOs5Qr"
@@ -95,7 +136,7 @@
         "id": "9gqZTjESslCk",
         "outputId": "efc82abb-3556-4fa3-f794-b02efe57afed"
       },
-      "execution_count": 6,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
@@ -109,7 +150,15 @@
     {
       "cell_type": "markdown",
       "source": [
-        "3."
+        "4.\n",
+        "f = open(\"numbers.txt\", \"w\") # \"numbers.txt\" 파일을 쓰기 모드로 열기 f.write(\"10\\n20\\n30\\n40\\n50\") # 파일에 숫자를 쓰기\n",
+        "\n",
+        "with open(\"numbers.txt\", \"r\") as f: # \"numbers.txt\" 파일을 읽기 모드로 열기\n",
+        "\n",
+        "    for line in f:  # 파일을 한 줄씩 읽어들임\n",
+        "\n",
+        "      print(line.strip()) # 각 줄을 출력하고, 줄바꿈 문자을 제거하여 출력\n",
+        "f.close() # 파일 객체 닫기"
       ],
       "metadata": {
         "id": "CiAJkiO5tFpb"
@@ -132,7 +181,7 @@
         "id": "g5hxqWzktAXz",
         "outputId": "83e66a8d-c3bc-442f-f364-08a2ced2a690"
       },
-      "execution_count": 7,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
@@ -156,7 +205,22 @@
     {
       "cell_type": "markdown",
       "source": [
-        "4."
+        "5.\n",
+        "import pandas as pd // panda 함수를 불러 오는데 pd로 간추려서 불러오기\n",
+        "\n",
+        "data = {\n",
+        "\n",
+        "'이름' : ['지석', '영수', '민준'],\n",
+        "\n",
+        "'나이' : [20, 20, 21],\n",
+        "\n",
+        "'성별' : ['남', '남', '남']\n",
+        "\n",
+        "} // data에 자료 집어 넣기\n",
+        "\n",
+        "df = pd.DataFrame(data) // data 리스트에 pd 실행시키기\n",
+        "\n",
+        "print(df) // df 출력하기"
       ],
       "metadata": {
         "id": "uZZV-a00n1nz"
@@ -184,7 +248,7 @@
         "id": "ncwJy4bun1wz",
         "outputId": "df08e673-3bae-4e7c-9968-60ca5a5e9ee7"
       },
-      "execution_count": 4,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
@@ -201,7 +265,18 @@
     {
       "cell_type": "markdown",
       "source": [
-        "5."
+        "6.\n",
+        "thisdict = {\n",
+        "\n",
+        "\"brand\": \"Ford\",\n",
+        "\n",
+        "\"model\": \"Mustang\",\n",
+        "\"year\": 1964\n",
+        "} // thisdict 라는 dictionay\n",
+        "\n",
+        "thisdict.update({\"color\": \"red\"}) // thisdict에 color:red 추가\n",
+        "\n",
+        "print(thisdict) //thisdict 출력"
       ],
       "metadata": {
         "id": "dVp9EiAfuVnC"
@@ -223,9 +298,9 @@
           "base_uri": "https://localhost:8080/"
         },
         "id": "BU1v2XXutmHM",
-        "outputId": "6a0cd729-81d3-4802-987d-7215d389b1ed"
+        "outputId": "fb87e112-1116-4c59-a7ab-fca4a8beaefd"
       },
-      "execution_count": 12,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
@@ -239,7 +314,52 @@
     {
       "cell_type": "markdown",
       "source": [
-        "6."
+        "7. python --version # 현재 시스템에 설치된 Python의 버전을 출력하는 명령"
+      ],
+      "metadata": {
+        "id": "y3N2JEuq5IT9"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "python --version"
+      ],
+      "metadata": {
+        "id": "fkd6W9I95LLs"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "8.\n",
+        "import numpy as np # numpy 라이브러리를 np라는 별칭으로 import\n",
+        "\n",
+        "arr = np.array([1,2,3,4,5]) # 리스트 [1, 2, 3, 4, 5]를 numpy 배열로 변환하여 arr에 저장\n",
+        "\n",
+        "print(arr.shape) # 배열 arr의 모양(shape)을 출력\n",
+        "\n",
+        "*print(arr.dtype) * # 배열 arr의 데이터 타입(dtype)을 출력\n",
+        "\n",
+        "print(arr.ndim) # 배열 arr의 차원 수(ndim)를 출력\n",
+        "\n",
+        "arr += 10 # 배열 arr의 각 요소에 10을 더하여 결과를 다시 arr에 할당\n",
+        "\n",
+        "print(arr) # 배열 arr을 출력\n",
+        "\n",
+        "arr = arr.astype(np.float64) # 배열 arr의 데이터 타입을 float64(64비트 부동소수점)으로 변경\n",
+        "\n",
+        "arr /= 2 # 배열 arr의 각 요소를 2로 나누어 결과를 다시 arr에 할당\n",
+        "\n",
+        "print(arr) # 배열 arr을 출력\n",
+        "\n",
+        "print(np.mean(arr)) # 배열 arr의 평균(mean)을 출력\n",
+        "\n",
+        "print(np.std(arr)) # 배열 arr의 표준편차(std)를 출력\n",
+        "\n",
+        "print(np.max(arr)) # 배열 arr의 최댓값(maximum)을 출력"
       ],
       "metadata": {
         "id": "fxKJR-tuy8Dz"
@@ -280,7 +400,7 @@
         "id": "HEOF24i1xd_k",
         "outputId": "85d4b1ba-68dc-41ca-83e4-36d9dc5993e9"
       },
-      "execution_count": 14,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
@@ -302,7 +422,12 @@
     {
       "cell_type": "markdown",
       "source": [
-        "7."
+        "9.\n",
+        "import numpy # numpy 라이브러리를 import\n",
+        "\n",
+        "arr = numpy.array([1, 2, 3, 4, 5]) # numpy 배열 생성\n",
+        "\n",
+        "print(arr) # 배열 출력"
       ],
       "metadata": {
         "id": "45tY9NkHy7mK"
@@ -322,7 +447,7 @@
         "id": "HffqVwBU0EJc",
         "outputId": "d3ddb16d-1135-4e99-8d42-56192b89c769"
       },
-      "execution_count": 20,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
@@ -336,7 +461,7 @@
     {
       "cell_type": "markdown",
       "source": [
-        "8."
+        "10."
       ],
       "metadata": {
         "id": "HAnvqjR91j_D"
@@ -354,9 +479,9 @@
           "base_uri": "https://localhost:8080/"
         },
         "id": "IT6SzX8I1gbs",
-        "outputId": "c19bf21e-7ce1-4239-d559-394a52e4a02c"
+        "outputId": "d1775b23-8a1c-40c3-f6e4-fc3cc8b6d954"
       },
-      "execution_count": 21,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
@@ -370,7 +495,7 @@
     {
       "cell_type": "markdown",
       "source": [
-        "9."
+        "11.\n"
       ],
       "metadata": {
         "id": "xYzIOmgE2FhD"
@@ -387,9 +512,9 @@
           "base_uri": "https://localhost:8080/"
         },
         "id": "0Q0Z-oXL14EM",
-        "outputId": "370a1822-2017-492f-be22-520844f2eb2b"
+        "outputId": "f5ba512d-58a2-497f-e069-ff314689e33d"
       },
-      "execution_count": 22,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
@@ -403,7 +528,7 @@
     {
       "cell_type": "markdown",
       "source": [
-        "10."
+        "12."
       ],
       "metadata": {
         "id": "M6i-LtAA2Gyr"
@@ -420,9 +545,9 @@
           "base_uri": "https://localhost:8080/"
         },
         "id": "ja-cR95q2H3p",
-        "outputId": "dbdd74bd-0efa-4291-bbf3-2c4eaed837c2"
+        "outputId": "0582cd6d-69b4-4391-8f9a-616a41046f7c"
       },
-      "execution_count": 23,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
